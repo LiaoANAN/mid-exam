@@ -9,8 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>台大文教 短期文理補習班</title>
     <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
           <div class="row">
@@ -79,7 +81,7 @@
     <div id="test1" class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
                 <li class="breadcrumb-item active" aria-current="page">課程特色介紹</li>
             </ol>
         </nav>
@@ -87,7 +89,7 @@
     <!--顯示目前路徑-->
 
     <!--課程介紹-->
-    <div class="container">
+    <div class="container" data-aos="fade-right" data-aos="flip-left">
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <img class="img-fluid rounded" src="image/class.jpg">
@@ -112,7 +114,7 @@
         <div id="test2" class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
                     <li class="breadcrumb-item active" aria-current="page">專業師資介紹</li>
                 </ol>
             </nav>
@@ -122,7 +124,7 @@
         <h1>專業師資介紹</h1>
         <div class="row">
             <div class="col-lg-4 my-4">
-                <div class="card text-center" data-aos="flip-left">
+                <div class="card text-center" data-aos="fade-right" data-aos="flip-left">
                     <img class="card-img-top" src="image/teacher1.jpg" alt="" height="200">
                     <div class="card-body">
                         <h5 class="card-title">李傑</h5>
@@ -201,7 +203,7 @@
     <div id="test3" class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
                 <li class="breadcrumb-item active" aria-current="page">課程規劃介紹</li>
             </ol>
         </nav>
@@ -209,7 +211,7 @@
     <!--顯示目前路徑-->
 
     <!--課程規劃介紹-->
-    <div class="container mt-4">
+    <div class="container mt-4" data-aos="fade-right" data-aos="flip-left">
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <h1>課程規劃介紹</h1>
@@ -240,14 +242,14 @@
     <div id="test4" class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
                     <li class="breadcrumb-item active" aria-current="page">招生資訊</li>
                 </ol>
             </nav>
         </div>
     <!--顯示目前路徑-->
 
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-right" data-aos="flip-left">
 
         <h1>招生資訊</h1>
 
@@ -320,14 +322,14 @@
     <div id="test5" class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
                     <li class="breadcrumb-item active" aria-current="page">聯絡我們</li>
                 </ol>
             </nav>
         </div>
     <!--顯示目前路徑-->
     
-    <div class="container">
+    <div class="container" data-aos="fade-right" data-aos="flip-left">
         <h1>聯絡我們</h1><br>
         <div class="row">
             <div class="col-lg-8 mb-4">
@@ -346,37 +348,37 @@
 
         <div  class="row">
             <div class="col-lg-8 mb-4">
-                <h3>Send a Message</h3>
+                <h3>寄信給我們</h3>
                 <form action="">
                     <div class="form-group">
-                        <label for="name">Name:</label>
+                        <label for="name">您的大名:</label>
                         <input class="form-control" type="text" id="name">
                     </div>
 
                     <div class="form-group">
-                        <label for="phone">Phone Number:</label>
+                        <label for="phone">您的電話號碼:</label>
                         <input class="form-control" type="tel" id="phone">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email Address:</label>
+                        <label for="email">您的Email:</label>
                         <input class="form-control" type="tel" id="email" placeholder="name@nfu.edu.tw">
                     </div>
 
                     <div class="form-group">
-                        <label for="information">Question Type:</label>
+                        <label for="information">您要詢問的類型:</label>
                         <select class="form-control" name="" id="information">
-                            <option value="">product Price</option>
-                            <option value="">product Information</option>
-                            <option value="">product Catlog</option>
+                            <option value="">招生資訊</option>
+                            <option value="">師資陣容</option>
+                            <option value="">其他</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Message:</label>
+                        <label for="message">寄信內容:</label>
                         <textarea rows="5" class="form-control" id="message"></textarea>
                     </div>
-                    <input type="submit" class="btn btn-primary btn-block" value="Send Message">
+                    <input type="submit" class="btn btn-primary btn-block" value="寄出">
                 </form>
             </div>            
         </div>
@@ -387,7 +389,7 @@
 
     <!--Footer-->
     <div class="my-5 py-3 bg-dark text-white text-center">
-        Copyright &copy; NFU 2020
+        Copyright &copy; 台大文教 短期文理補習班 2020
     </div>
     <!--Footer-->
 
@@ -401,6 +403,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+    <!--aos js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <!--aos js-->
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
